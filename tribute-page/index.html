@@ -24,20 +24,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+    <link rel="stylesheet" href="css/style.css">
+
     <script>
         new WOW().init();
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
 </head>
 
 <body>
-
+<div id="main">
   
     <div class="jumbotron">
         <div class="container text-right">
@@ -45,7 +41,7 @@
                 <blockquote class="blockquote-reverse">
                     <h2 class="lead quote wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s"></h2>
                      <p  class="wow fadeInUp" data-wow-duration='0.7s' data-wow-delay='1.5s'>
-                        <span style="color:white;">Nelson Mandela</span>
+                        <div id="title"><span style="color:white;">Nelson Mandela</span></div>
                     </p>    
                 </blockquote>
             </div>
@@ -57,9 +53,16 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-14 col-xs-12">
 
-                <div class='profile-image'>
-                    <img align="left" class="img-responsive img-circle  wow bounceInUp" data-wow-duration="0.7s" data-wow-delay="1s" src="http://www.cornelwest.com/images/Nelson_Mandela_by_akalinz.jpg"
-                        alt="Profile image example" />
+                <div id="img-div" class='profile-image'>
+                    <figure style="margin:0px; padding:0px;">
+                    <img id="image" align="left" class="img-responsive img-circle  wow bounceInUp"
+                            data-wow-duration="0.7s" data-wow-delay="1s"
+                            src="images/Nelson_Mandela_by_akalinz.jpg"
+                        alt="Nelson Mendela" />
+                        <figcaption id="img-caption" class="text-center">Nelson Mendela</figcaption>    
+
+                    </figure>
+                    
                 </div>
             </div>
 
@@ -83,7 +86,7 @@
                 </aside>
             </div>
             <!-- end of column -->
-
+<div id="tribute-info">
             <div class="col-md-9 col-sm-8 col-xs-12">
 
                 <div class="well" id="early-life">
@@ -762,6 +765,7 @@
                 <!--   end of well        -->
                 <br>
             </div>
+</div> <!-- end of #tribute-info-->
             <!-- end of column -->
             <br>
         </div>
@@ -774,7 +778,7 @@
             <div class="col-md-12">
                 <div class="well">
                 <footer>
-                    <h4 class="lead">This page was created for the <a href="https://freeCodeCamp.com" target="_blank">freeCodeCamp.com</a> challenge <strong>build a Tribute Page</strong></h4>
+                    <h4 class="lead">This page was created for the <a href="https://freeCodeCamp.com" target="_blank">freeCodeCamp.com</a>  challenge <strong>build a Tribute Page</strong> using <a id="tribute-link" href="https://en.wikipedia.org/wiki/Nelson_Mandela" target="_blank">Nelson Mandela's Wikipedia page</a> as source </a> </h4>
                     <ul> <strong>Libraries used:</strong>
                         <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
                         <li><a href="https://jquery.com/" target="_blank">jQuery</a></li>
@@ -792,10 +796,10 @@
         <a onclick="$('body').animatescroll({scrollSpeed:500});"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
     </div>
   
-  
+</div> <!-- end #main -->
 
     <script  src="js/index.js"></script>
-
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 
 

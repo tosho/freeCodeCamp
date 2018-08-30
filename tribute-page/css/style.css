@@ -8,7 +8,7 @@ body {
 
 .jumbotron {
   height: 500px;
-  background: url("http://cdn.history.com/sites/2/2013/11/nelson-mandela-speech-H.jpeg") no-repeat center center;
+  background: url('../images/nelson-mandela-speech.jpeg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -81,3 +81,5 @@ footer {
 }
 
 .scrollup a:hover text-decoration: none;
+
+figcaption#img-caption {color:red; margin:0px auto; padding: 0px auto; text-align: center;}
