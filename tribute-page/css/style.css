@@ -80,6 +80,62 @@ footer {
   cursor: pointer;
 }
 
+
 .scrollup a:hover text-decoration: none;
 
-figcaption#img-caption {color:red; margin:0px auto; padding: 0px auto; text-align: center;}
+.well:hover, .well:focus {
+  border: 1px solid rgb(96, 96, 146);
+}
+
+figcaption#img-caption {margin:0px auto; padding: 0px auto; text-align: center;}
+
+
+ 
+@media (max-width:768px) {
+  .jumbotron {
+    height: 400px;
+  }
+
+  .anchor {
+    
+  }
+
+  :target::before {
+    content: "";
+    display: block;
+    top:150px;
+    position: absolute;
+    /* margin-top: 50px; */
+  }
+
+ .sticky {
+  position: -webkit-sticky;
+  position: sticky ;
+  top: 0px;
+  display:block;
+  width: 100%;
+  z-index: 10;
+ }
+
+ .custom-select {
+
+  /* width: 100%; */
+
+  padding:5px;
+  margin:0 auto;
+  
+}
+.custom-select select {
+ font-size: 1.2em;
+ margin:0 auto;
+ width: 100%;
+ 
+ }
+
+.custom-select select option {
+   font-size: 2em;
+   color: yellow;
+   background:red;
+ }
+
+}
